@@ -1,0 +1,16 @@
+FROM python:3.11-slim-bookworm
+
+LABEL maintainer="Universal DX Bioinformatics <bioinformatics@universaldx.com>" \
+      version="1.0.0" \
+      description="Python ML environment for UDX cfDNA methylation pipeline"
+
+# System deps
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc g++ gfortran libopenblas-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Python packages
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+WORKDIR /opt/pipeline

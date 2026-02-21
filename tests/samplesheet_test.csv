@@ -1,0 +1,8 @@
+sample_id,patient_id,condition,sample_type,library_type,read1,read2
+CRC_001,PT001,CRC,cfDNA,targeted,/data/reads/CRC_001_R1.fastq.gz,/data/reads/CRC_001_R2.fastq.gz
+CRC_002,PT002,CRC,cfDNA,targeted,/data/reads/CRC_002_R1.fastq.gz,/data/reads/CRC_002_R2.fastq.gz
+CRC_003,PT003,CRC,cfDNA,hybrid_capture,/data/reads/CRC_003_R1.fastq.gz,/data/reads/CRC_003_R2.fastq.gz
+CTRL_001,PT101,control,cfDNA,targeted,/data/reads/CTRL_001_R1.fastq.gz,/data/reads/CTRL_001_R2.fastq.gz
+CTRL_002,PT102,control,cfDNA,targeted,/data/reads/CTRL_002_R1.fastq.gz,/data/reads/CTRL_002_R2.fastq.gz
+CTRL_003,PT103,control,cfDNA,hybrid_capture,/data/reads/CTRL_003_R1.fastq.gz,/data/reads/CTRL_003_R2.fastq.gz
+ADN_001,PT201,adenoma,cfDNA,targeted,/data/reads/ADN_001_R1.fastq.gz,/data/reads/ADN_001_R2.fastq.gz
